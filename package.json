@@ -11,5 +11,8 @@
     "@nuxtjs/eslint-config-typescript": "^11.0.0",
     "@nuxtjs/google-fonts": "^3.0.0-0",
     "nuxt": "3.0.0"
+  },
+  "dependencies": {
+    "image-map": "^2.0.1"
   }
 }
