@@ -7,14 +7,12 @@
 <script setup lang='ts'>
 </script>
 <style lang='css'>
-
-.construction-image {
-  max-width: 100%;
+* {
+  box-sizing: border-box;
+  font-family: Geramond;
 }
 
-.overlay {
-  border: red 4px dotted;
-  background-color: red;
-  z-index: 10;
+p {
+  font-size: 10px;
 }
 </style>
