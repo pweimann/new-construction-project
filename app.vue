@@ -1,5 +1,13 @@
 <template>
-  <div>
-    <NuxtWelcome />
-  </div>
+    <header>
+      <!-- Header content goes here -->
+    </header>
+    <main>
+      <NuxtPage></NuxtPage>
+    </main>
+    <footer>
+      <!-- Footer content goes here -->
+    </footer>
 </template>
+<style lang='css'>
+</style>
