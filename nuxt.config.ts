@@ -4,4 +4,9 @@ export default defineNuxtConfig({
     '@nuxtjs/google-fonts',
     '@nuxtjs/tailwindcss'
   ],
+  googleFonts: {
+    families: {
+      Quicksand: true,
+    }
+  }
 })

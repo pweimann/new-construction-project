@@ -4,7 +4,7 @@ import defaultTheme from 'tailwindcss/defaultTheme'
 export default <Partial<Config>>{
   theme: {
     fontFamily: {
-      sans: ['sans-serif'],
+      sans: ['Quicksand', 'sans-serif'],
       serif: ['serif']
     },
     extend: {
