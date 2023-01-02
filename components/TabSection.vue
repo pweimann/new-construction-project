@@ -5,15 +5,19 @@
         kreuzberg</h2>
     </div>
     <div class='tabs-wrapper full-width'>
-      <div class='tabs-nav w-1/3'>
+      <div class='tabs-nav full-width md:w-1/3'>
         <ul>
-          <li v-for='navItem in tabsNavList' @click='clickTabNavItem(navItem)' :class='activeTabNavItemStyles(navItem)'
-              class='tabs-nav-item text-3xl text-dark-rosa my-2 ml-8'><span
-            class='mr-2'>+</span>{{ navItem.title }}
+          <li v-for='navItem in tabsNavList' @click='clickTabNavItem(navItem)'
+              :class='isActiveItem(navItem) ? "tab-nav-item--active" : ""'
+              class='tabs-nav-item text-dark-rosa my-2 ml-8 mr-4'>
+            <div class='text-3xl font-bold'><span
+              class='mr-2'>+</span>{{ navItem.title }}
+            </div>
+            <p class='text-dark-rosa text-1xl md:text-3xl leading-normal mb-4' v-show='isActiveItem(navItem)'>{{ navItem.description }}</p>
           </li>
         </ul>
       </div>
-      <div class='tabs-content w-2/3'>
+      <div class='tabs-content full-width md:w-2/3'>
         <img src='/placeholder.jpg'>
       </div>
     </div>
@@ -27,15 +31,18 @@ import { TabNavItem } from '~/types/TabNavItem'
 const tabsNavList: Ref<TabNavItem[]> = ref([
   {
     title: 'Save',
-    imageSrc: '/placeholder.jpg'
+    imageSrc: '/placeholder.jpg',
+    description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.'
   },
   {
     title: 'Our',
-    imageSrc: '/placeholder.jpg'
+    imageSrc: '/placeholder.jpg',
+    description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.'
   },
   {
     title: 'Planet',
-    imageSrc: '/placeholder.jpg'
+    imageSrc: '/placeholder.jpg',
+    description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.'
   }
 ])
 
@@ -45,15 +52,26 @@ const clickTabNavItem = (item: TabNavItem) => {
   activeNavItem.value = item
 }
 
-const activeTabNavItemStyles = (item: TabNavItem) => {
-  return item === activeNavItem.value ? 'tab-nav-item--active' : ''
+const isActiveItem = (item: TabNavItem) => {
+  return item === activeNavItem.value
 }
 </script>
 <style lang='css' scoped>
-.tabs-wrapper {
-  display: flex;
-  flex-direction: row;
+@media (min-width: 320px) {
+  .tabs-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
 }
+
+@media (min-width: 768px) {
+  .tabs-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+
 
 .tabs-nav {
   display: flex;
