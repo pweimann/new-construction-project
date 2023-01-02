@@ -1,12 +1,18 @@
 <template>
-  <section class='bg-light-rosa py-8'>
-    <div class='container mx-auto px-4 text-center'>
+  <section class='bg-light-rosa py-12'>
+    <div class='container mx-auto px-4 text-center mb-12'>
       <h2 class='text-dark-rosa text-2xl md:text-5xl font-bold uppercase leading-tight mb-4'>construction berlin
         kreuzberg</h2>
     </div>
-    <div class='tabs-wrapper'>
-      <div class='tabs-nav'></div>
-      <div class='tabs-content'></div>
+    <div class='tabs-wrapper full-width'>
+      <div class='tabs-nav w-1/3'>
+        <ul>
+          <li v-for="navItem in tabsNavList">{{navItem.title}}</li>
+        </ul>
+      </div>
+      <div class='tabs-content w-2/3'>
+        <img src='/placeholder.jpg'>
+      </div>
     </div>
   </section>
 </template>
@@ -31,5 +37,8 @@ const tabsNavList: Ref<TabNavItem[]> = ref([
 ])
 </script>
 <style lang='css'>
-
+.tabs-wrapper {
+  display: flex;
+  flex-direction: row;
+}
 </style>
