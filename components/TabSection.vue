@@ -20,7 +20,7 @@
         </ul>
       </div>
       <div class='tabs-content full-width md:w-2/3'>
-        <img src='/second-placeholder.png'>
+        <img :src='activeNavItem.imageSrc'>
       </div>
     </div>
   </section>
@@ -33,7 +33,7 @@ import { TabNavItem } from '~/types/TabNavItem'
 const tabsNavList: Ref<TabNavItem[]> = ref([
   {
     title: 'Save',
-    imageSrc: '/placeholder.jpg',
+    imageSrc: '/second-placeholder.png',
     description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.'
   },
   {
@@ -43,7 +43,7 @@ const tabsNavList: Ref<TabNavItem[]> = ref([
   },
   {
     title: 'Planet',
-    imageSrc: '/placeholder.jpg',
+    imageSrc: '/second-placeholder.png',
     description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.'
   }
 ])
