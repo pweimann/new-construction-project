@@ -66,7 +66,7 @@ const isActiveItem = (item: TabNavItem) => {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 640px) {
   .tabs-wrapper {
     display: flex;
     flex-direction: row;
@@ -110,8 +110,9 @@ const isActiveItem = (item: TabNavItem) => {
 
 .tabs-content {
   position: relative;
-  display: block;
+  display: flex;
   overflow: hidden;
+  align-items: center;
 }
 
 .tabs-content img {

@@ -14,7 +14,7 @@
         <img src='/placeholder.jpg' alt='Image 1'
              class='collage-left-side-item rounded-3xl object-cover'>
         <img src='/placeholder.jpg' alt='Image 1'
-             class='collage-left-side-item-above md:w-1/6 rounded-3xl object-cover'>
+             class='collage-left-side-item-above sm:w-1/6 rounded-3xl object-cover'>
       </div>
       <div class='collage-right-side'>
         <div class='collage-right-side-inner'>
@@ -50,7 +50,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 640px) {
   .collage-container {
     display: flex;
     flex-direction: row;
@@ -103,7 +103,7 @@
   .collage-right-side-inner {
     position: relative;
     width: 90%;
-    min-height: 425px;
+    height: 35vw;
     margin-top: 5%;
     margin-bottom: 12%;
   }
