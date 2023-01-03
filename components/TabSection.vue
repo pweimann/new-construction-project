@@ -11,14 +11,16 @@
               :class='isActiveItem(navItem) ? "tab-nav-item--active" : ""'
               class='tabs-nav-item text-dark-rosa my-2 ml-8 mr-4'>
             <div class='text-3xl font-bold'><span
-              class='mr-2'>+</span>{{ navItem.title }}
+              class='mr-2'>+</span>
+              {{ navItem.title }}
             </div>
-            <p class='text-dark-rosa text-1xl md:text-3xl leading-normal mb-4' v-show='isActiveItem(navItem)'>{{ navItem.description }}</p>
+            <p class='text-dark-rosa text-1xl leading-normal mb-4' v-show='isActiveItem(navItem)'>
+              {{ navItem.description }}</p>
           </li>
         </ul>
       </div>
       <div class='tabs-content full-width md:w-2/3'>
-        <img src='/placeholder.jpg'>
+        <img src='/second-placeholder.png'>
       </div>
     </div>
   </section>
@@ -71,8 +73,6 @@ const isActiveItem = (item: TabNavItem) => {
   }
 }
 
-
-
 .tabs-nav {
   display: flex;
   flex-direction: column;
@@ -93,5 +93,18 @@ const isActiveItem = (item: TabNavItem) => {
 /*noinspection CssUnusedSymbol*/
 .tab-nav-item--active {
   text-decoration: none;
+}
+
+.tabs-content {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.tabs-content img {
+  object-fit: scale-down;
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block;
 }
 </style>
