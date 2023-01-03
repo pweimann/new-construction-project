@@ -11,7 +11,7 @@
               :class='isActiveItem(navItem) ? "tab-nav-item--active" : ""'
               class='tabs-nav-item text-dark-rosa my-2 ml-8 mr-4'>
             <div class='text-2xl font-bold'>
-              <img :src='isActiveItem(navItem) ? "plus-icon.svg": "minus-icon.svg"' class='tabs-nav-item-before inline-block mr-2'/>
+              <img :src='isActiveItem(navItem) ? "minus-icon.svg": "plus-icon.svg"' class='tabs-nav-item-before inline-block mr-2'/>
               <div class='tabs-nav-item-title inline-block'>{{ navItem.title }}</div>
             </div>
             <p class='text-dark-rosa text-1xl leading-normal mb-4' v-show='isActiveItem(navItem)'>
@@ -85,6 +85,11 @@ const isActiveItem = (item: TabNavItem) => {
   transition: all 2s ease-in-out;
 }
 
+.tabs-nav-item div {
+  display: flex;
+  align-items: center;
+}
+
 .tabs-nav-item-title {
   text-decoration: underline;
 }
@@ -99,7 +104,7 @@ const isActiveItem = (item: TabNavItem) => {
 }
 
 /*noinspection CssUnusedSymbol*/
-.tab-nav-item--active {
+.tab-nav-item--active .tabs-nav-item-title {
   text-decoration: none;
 }
 
