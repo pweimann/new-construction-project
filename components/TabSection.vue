@@ -10,9 +10,9 @@
           <li v-for='navItem in tabsNavList' @click='clickTabNavItem(navItem)'
               :class='isActiveItem(navItem) ? "tab-nav-item--active" : ""'
               class='tabs-nav-item text-dark-rosa my-2 ml-8 mr-4'>
-            <div class='text-3xl font-bold'><span
-              class='mr-2'>+</span>
-              {{ navItem.title }}
+            <div class='text-2xl font-bold'>
+              <img :src='isActiveItem(navItem) ? "plus-icon.svg": "minus-icon.svg"' class='tabs-nav-item-before inline-block mr-2'/>
+              <div class='tabs-nav-item-title inline-block'>{{ navItem.title }}</div>
             </div>
             <p class='text-dark-rosa text-1xl leading-normal mb-4' v-show='isActiveItem(navItem)'>
               {{ navItem.description }}</p>
@@ -82,11 +82,19 @@ const isActiveItem = (item: TabNavItem) => {
 
 .tabs-nav-item {
   cursor: pointer;
-  text-decoration: underline;
   transition: all 2s ease-in-out;
 }
 
-.tabs-nav-item:hover {
+.tabs-nav-item-title {
+  text-decoration: underline;
+}
+
+.tabs-nav-item-before {
+  width: 20px;
+  height: 20px;
+}
+
+.tabs-nav-item:hover .tabs-nav-item-title {
   text-decoration: none;
 }
 
