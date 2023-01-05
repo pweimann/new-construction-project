@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+    <defs>
+        <style>.cls-1{fill:#693A44;stroke:#693A44;stroke-miterlimit:10;}.cls-2{fill:#FFC2D1;}</style>
+    </defs>
+    <circle class="cls-1" cx="25" cy="25" r="16.49"/>
+    <rect class="cls-2" x="12.71" y="23.75" width="24.58" height="2.5" transform="translate(50 50) rotate(180)"/>
+</svg>
