@@ -4,6 +4,9 @@ export default defineNuxtConfig({
     '@nuxtjs/google-fonts',
     '@nuxtjs/tailwindcss'
   ],
+  build: {
+    transpile: ['gsap'],
+  },
   googleFonts: {
     families: {
       Quicksand: true,
