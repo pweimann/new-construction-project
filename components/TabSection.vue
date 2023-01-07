@@ -1,28 +1,31 @@
 <template>
   <section class='bg-light-rosa py-12'>
-    <div class='container mx-auto px-4 text-center mb-12'>
-      <h2 class='text-dark-rosa text-2xl md:text-5xl font-bold uppercase leading-tight mb-4'>construction berlin
-        kreuzberg</h2>
-    </div>
-    <div class='tabs-wrapper full-width'>
-      <div class='tabs-nav full-width md:w-1/3'>
-        <ul>
-          <li v-for='navItem in tabsNavList' @click='clickTabNavItem(navItem)'
-              :class='isActiveItem(navItem) ? "tab-nav-item--active" : ""'
-              class='tabs-nav-item text-dark-rosa my-2 ml-8 mr-4'>
-            <div class='text-2xl font-bold'>
-              <img :src='isActiveItem(navItem) ? "minus-icon.svg": "plus-icon.svg"' class='tabs-nav-item-before inline-block mr-2'/>
-              <div class='tabs-nav-item-title inline-block'>{{ navItem.title }}</div>
-            </div>
-            <p class='text-dark-rosa text-1xl leading-normal mb-4' v-show='isActiveItem(navItem)'>
-              {{ navItem.description }}</p>
-          </li>
-        </ul>
+    <FadeInTransition>
+      <div class='container mx-auto px-4 text-center mb-12'>
+        <h2 class='text-dark-rosa text-2xl md:text-5xl font-bold uppercase leading-tight mb-4'>construction berlin
+          kreuzberg</h2>
       </div>
-      <div class='tabs-content full-width md:w-2/3'>
-        <img :src='activeNavItem.imageSrc'>
+      <div class='tabs-wrapper full-width'>
+        <div class='tabs-nav full-width md:w-1/3'>
+          <ul>
+            <li v-for='navItem in tabsNavList' @click='clickTabNavItem(navItem)'
+                :class='isActiveItem(navItem) ? "tab-nav-item--active" : ""'
+                class='tabs-nav-item text-dark-rosa my-2 ml-8 mr-4'>
+              <div class='text-2xl font-bold'>
+                <img :src='isActiveItem(navItem) ? "minus-icon.svg": "plus-icon.svg"'
+                     class='tabs-nav-item-before inline-block mr-2' />
+                <div class='tabs-nav-item-title inline-block'>{{ navItem.title }}</div>
+              </div>
+              <p class='text-dark-rosa text-1xl leading-normal mb-4' v-show='isActiveItem(navItem)'>
+                {{ navItem.description }}</p>
+            </li>
+          </ul>
+        </div>
+        <div class='tabs-content full-width md:w-2/3'>
+          <img :src='activeNavItem.imageSrc'>
+        </div>
       </div>
-    </div>
+    </FadeInTransition>
   </section>
 </template>
 
