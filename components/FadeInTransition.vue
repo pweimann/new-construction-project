@@ -24,7 +24,7 @@ onMounted(() => {
       scrollTrigger: {
         trigger: fadeContainer,
         start: 'top 90%',
-        end: 'top 60%',
+        end: 'top 20%',
         scrub: true
       }
     })
