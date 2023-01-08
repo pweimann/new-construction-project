@@ -5,9 +5,7 @@
     </div>
   </section>
   <ImageCollage></ImageCollage>
-  <BackgroundImageSection>
-    <img src='/placeholder.jpg'>
-  </BackgroundImageSection>
+  <BackgroundImageSection />
   <TabSection></TabSection>
 </template>
 <script lang='ts' setup>
