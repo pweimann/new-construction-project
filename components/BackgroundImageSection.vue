@@ -37,7 +37,18 @@ onUnmounted(() => {
 <style lang='css' scoped>
 section {
   position: relative;
-  min-height: 70vh;
+}
+
+@media (min-width: 320px) {
+  section {
+    min-height: 30vh;
+  }
+}
+
+@media (min-width: 640px) {
+  section {
+    min-height: 70vh;
+  }
 }
 
 .parallax-effect {
