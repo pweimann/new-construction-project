@@ -30,7 +30,7 @@
 </template>
 
 <script setup lang='ts'>
-import { Ref } from 'vue'
+import { ref, Ref } from 'vue'
 import { TabNavItem } from '~/types/TabNavItem'
 
 const tabsNavList: Ref<TabNavItem[]> = ref([

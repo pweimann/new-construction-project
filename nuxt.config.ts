@@ -11,5 +11,8 @@ export default defineNuxtConfig({
     families: {
       Quicksand: true,
     }
+  },
+  imports: {
+    autoImport: false
   }
 })
