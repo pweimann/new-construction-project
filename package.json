@@ -8,11 +8,12 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@nuxt/image-edge": "^1.0.0-27913696.5d122a3",
     "@nuxtjs/eslint-config-typescript": "^11.0.0",
     "@nuxtjs/google-fonts": "^3.0.0-0",
     "@nuxtjs/tailwindcss": "^6.2.0",
     "gsap": "^3.11.4",
-    "nuxt": "3.0.0"
+    "nuxt": "3.1.1"
   },
   "dependencies": {
     "tw-elements": "^1.0.0-alpha13"
