@@ -4,10 +4,10 @@
       <h1>Hello girls, scroll down</h1>
     </div>
   </section>
-  <img src='/test.png'/>
+  <ImageCarousel/>
   <ImageCollage></ImageCollage>
   <BackgroundImageSection />
-  <TabSection></TabSection>
+  <TabSection />
 </template>
 <script lang='ts' setup>
 </script>
