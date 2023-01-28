@@ -48,7 +48,6 @@
             src='/piktos/pikto_2.png'
             class='block w-full'
             alt=''
-            loading="lazy"
           />
         </div>
         <div class='carousel-item float-left w-full'>
@@ -56,7 +55,6 @@
             src='/piktos/pikto_3.png'
             class='block w-full'
             alt=''
-            loading="lazy"
           />
         </div>
         <div class='carousel-item float-left w-full'>
@@ -64,7 +62,6 @@
             src='/piktos/pikto_4.png'
             class='block w-full'
             alt=''
-            loading="lazy"
           />
         </div>
         <div class='carousel-item float-left w-full'>
@@ -72,7 +69,6 @@
             src='/piktos/pikto_5.png'
             class='block w-full'
             alt=''
-            loading="lazy"
           />
         </div>
       </div>
