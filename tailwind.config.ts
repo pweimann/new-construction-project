@@ -1,6 +1,10 @@
 import type { Config } from 'tailwindcss'
 
 export default <Partial<Config>>{
+  content: ['./src/**/*.{html,js}', './node_modules/tw-elements/dist/js/**/*.js'],
+  plugins: [
+    require('tw-elements/dist/plugin')
+  ],
   theme: {
     fontFamily: {
       sans: ['Quicksand', 'sans-serif'],

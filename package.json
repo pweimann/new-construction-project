@@ -13,5 +13,8 @@
     "@nuxtjs/tailwindcss": "^6.2.0",
     "gsap": "^3.11.4",
     "nuxt": "3.0.0"
+  },
+  "dependencies": {
+    "tw-elements": "^1.0.0-alpha13"
   }
 }
