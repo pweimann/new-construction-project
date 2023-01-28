@@ -4,6 +4,7 @@
       <h1>Hello girls, scroll down</h1>
     </div>
   </section>
+  <img src='/test.png'/>
   <ImageCollage></ImageCollage>
   <BackgroundImageSection />
   <TabSection></TabSection>
