@@ -4,12 +4,14 @@
       <h1>Hello girls, scroll down</h1>
     </div>
   </section>
+  <MarqueeLabel/>
   <ImageCarousel/>
   <ImageCollage></ImageCollage>
   <BackgroundImageSection />
   <TabSection />
 </template>
 <script lang='ts' setup>
+import MarqueeLabel from '~/components/MarqueeLabel.vue'
 </script>
 <style lang='css'>
 .hero-placeholder {

@@ -21,11 +21,12 @@ onMounted(() => {
     const fadeContainer = self.selector('.fade-in')
     gsap.to(fadeContainer, {
       opacity: 1,
+      duration: 2.5,
       scrollTrigger: {
         trigger: fadeContainer,
         start: 'top 90%',
-        end: 'top 20%',
-        scrub: true
+        // end: 'top 20%',
+        // scrub: true
       }
     })
   }, main.value)
