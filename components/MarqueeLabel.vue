@@ -12,7 +12,7 @@
 import { onMounted, ref } from 'vue'
 import gsap from 'gsap'
 
-const labelHtml = ref('SAVE OUR <strong>PLANET</strong> +++ reduce - reuse - recycle +++&nbsp;')
+const labelHtml = ref('save our <strong>planet</strong> +++ One earth - one chance +++&nbsp;')
 
 onMounted(() => {
   gsap.set('.marquee-wrapper span', {
@@ -20,7 +20,7 @@ onMounted(() => {
   })
 
   gsap.to('.marquee-wrapper span', {
-    duration: 10,
+    duration: 12,
     ease: "none",
     translateX: '-100%',
     modifiers: {

@@ -8,10 +8,59 @@
   <ImageCarousel/>
   <ImageCollage></ImageCollage>
   <BackgroundImageSection />
-  <TabSection />
+  <TabSection :tabs-nav-list='tabsNavList'/>
+  <TabSection :tabs-nav-list='saveOurPlanetList' reverse/>
 </template>
 <script lang='ts' setup>
 import MarqueeLabel from '~/components/MarqueeLabel.vue'
+import { ref, Ref } from 'vue'
+import { TabNavItem } from '~/types/TabNavItem'
+
+const tabsNavList: Ref<TabNavItem[]> = ref([
+  {
+    title: 'Freizeit',
+    imageSrc: '/tabs/Freizeit_Sport_neu.png',
+    description: 'Wohnen: Da der Trend des Wohnens hin zu unterschiedlichsten Wohnkonzepten wie auch dem Anstieg der Remote-Arbeiten deutet, wurden durch flexible Wohnungsgrößen von 20m2 bis 120m2 in den Kategorien XS - S - M - L - XL sowie der Grundrissvariabilität innerhalb der jeweiligen Wohnungen selbst (Anpassung einer Raumstruktur an die Bedürfnisse der Bewohnenden) die Adaption des Wohnraums an den jeweiligen Nutzer und Lebensabschnitt sichergestellt.\n'
+  },
+  {
+    title: 'Arbeiten',
+    imageSrc: '/tabs/Arbeiten_neu.png',
+    description: 'Das Arbeiten von Morgen wird sowohl von dem Anstieg verschiedenster Technologien wie beispielsweise KI und Automatisierung als auch von Remote-Arbeit und flexiblen Arbeitszeitmodellen geprägt sein. Erhöhte Aufmerksamkeit gilt der Nachhaltigkeit sowie der sozialen Verantwortung von Unternehmen, um ein Beitrag zur Verbesserung der Arbeitsbedingungen für Mitarbeiter und Verringerung der Umweltbelastung zu erzielen.'
+  },
+  {
+    title: 'Wohnen',
+    imageSrc: '/tabs/Wohnen_neu.png',
+    description: 'Lorem'
+  },
+  {
+    title: 'Grüne Lunge',
+    imageSrc: '/tabs/Grüne_Lunge_neu.png',
+    description: 'Lorem'
+  },
+  {
+    title: 'Mobilität',
+    imageSrc: '/tabs/Mobilität_neu.png',
+    description: 'Lorem'
+  }
+])
+
+const saveOurPlanetList: Ref<TabNavItem[]> = ref([
+  {
+    title: 'Save',
+    imageSrc: '/tabs/Reduce_neu.png',
+    description: 'Das Arbeiten von Morgen wird sowohl von dem Anstieg verschiedenster Technologien wie beispielsweise KI und Automatisierung als auch von Remote-Arbeit und flexiblen Arbeitszeitmodellen geprägt sein. Erhöhte Aufmerksamkeit gilt der Nachhaltigkeit sowie der sozialen Verantwortung von Unternehmen, um ein Beitrag zur Verbesserung der Arbeitsbedingungen für Mitarbeiter und Verringerung der Umweltbelastung zu erzielen.'
+  },
+  {
+    title: 'Our',
+    imageSrc: '/tabs/ReUse_neu.png',
+    description: 'Lorem'
+  },
+  {
+    title: 'Planet',
+    imageSrc: '/tabs/Recycle_neu.png',
+    description: 'Wohnen: Da der Trend des Wohnens hin zu unterschiedlichsten Wohnkonzepten wie auch dem Anstieg der Remote-Arbeiten deutet, wurden durch flexible Wohnungsgrößen von 20m2 bis 120m2 in den Kategorien XS - S - M - L - XL sowie der Grundrissvariabilität innerhalb der jeweiligen Wohnungen selbst (Anpassung einer Raumstruktur an die Bedürfnisse der Bewohnenden) die Adaption des Wohnraums an den jeweiligen Nutzer und Lebensabschnitt sichergestellt.\n'
+  }
+])
 </script>
 <style lang='css'>
 .hero-placeholder {

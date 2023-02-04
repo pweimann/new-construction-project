@@ -6,10 +6,6 @@ export default <Partial<Config>>{
     require('tw-elements/dist/plugin')
   ],
   theme: {
-    fontFamily: {
-      sans: ['Quicksand', 'sans-serif'],
-      serif: ['serif']
-    },
     extend: {
       colors: {
         'dark-rosa': '#693A44',

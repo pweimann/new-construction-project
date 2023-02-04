@@ -10,4 +10,7 @@
     </footer>
 </template>
 <style lang='css'>
+* {
+  font-family: Quicksand, SansSerif;
+}
 </style>
