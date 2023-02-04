@@ -14,7 +14,7 @@
 <script lang='ts' setup>
 import MarqueeLabel from '~/components/MarqueeLabel.vue'
 import { ref, Ref } from 'vue'
-import { TabNavItem } from '~/types/TabNavItem'
+import { TabNavItem } from '~/types/tab-nav-item'
 
 const tabsNavList: Ref<TabNavItem[]> = ref([
   {
@@ -59,6 +59,29 @@ const saveOurPlanetList: Ref<TabNavItem[]> = ref([
     title: 'Planet',
     imageSrc: '/tabs/Recycle_neu.png',
     description: 'Wohnen: Da der Trend des Wohnens hin zu unterschiedlichsten Wohnkonzepten wie auch dem Anstieg der Remote-Arbeiten deutet, wurden durch flexible Wohnungsgrößen von 20m2 bis 120m2 in den Kategorien XS - S - M - L - XL sowie der Grundrissvariabilität innerhalb der jeweiligen Wohnungen selbst (Anpassung einer Raumstruktur an die Bedürfnisse der Bewohnenden) die Adaption des Wohnraums an den jeweiligen Nutzer und Lebensabschnitt sichergestellt.\n'
+  }
+])
+
+const imageCarousel: Ref<{src: string, alt?: string}[]> = ref([
+  {
+    src: '/pikto/pikto_1.png',
+    alt: ''
+  },
+  {
+    src: '/pikto/pikto_2.png',
+    alt: ''
+  },
+  {
+    src: '/pikto/pikto_3.png',
+    alt: ''
+  },
+  {
+    src: '/pikto/pikto_4.png',
+    alt: ''
+  },
+  {
+    src: '/pikto/pikto_5.png',
+    alt: ''
   }
 ])
 </script>
