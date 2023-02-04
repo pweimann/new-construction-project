@@ -31,7 +31,7 @@
 
 <script setup lang='ts'>
 import { ref, Ref, defineProps } from 'vue'
-import { TabNavItem } from '~/types/TabNavItem'
+import { TabNavItem } from '~/types/tab-nav-item'
 
 const props = defineProps<{
   tabsNavList: TabNavItem[]
