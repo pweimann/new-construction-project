@@ -10,21 +10,23 @@
             voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
         </div>
       </div>
-      <div class='collage-container mt-8 md:mt-16 px-12 w-full'>
-        <div class='collage-left-side'>
-          <img src='/placeholder.jpg' alt='Image 1'
-               class='collage-left-side-item rounded-3xl object-cover'>
-          <img src='/placeholder.jpg' alt='Image 1'
-               class='collage-left-side-item-above sm:w-1/6 rounded-3xl object-cover'>
-        </div>
-        <div class='collage-right-side'>
-          <div class='collage-right-side-inner'>
-            <img src='/placeholder.jpg' alt='Image 1'
+      <div class='collage-container mt-8 md:mt-16 px-4 w-full'>
+        <FadeInTransition>
+          <div class='collage-left-side'>
+            <img src='/renderings/Persp1.jpg' alt='Image 1'
+                 class='collage-left-side-item rounded-3xl object-cover collage-left-side-first'>
+            <img src='/renderings/Persp2.jpg' alt='Image 1'
+                 class='collage-left-side-item-above sm:w-1/6 rounded-3xl object-cover collage-left-side-second'>
+          </div>
+        </FadeInTransition>
+        <FadeInTransition>
+          <div class='collage-right-side'>
+            <img src='/renderings/Persp3.jpg' alt='Image 1'
                  class='collage-right-side-item rounded-3xl object-cover'>
-            <img src='/placeholder.jpg' alt='Image 1'
+            <img src='/renderings/Persp4.jpg' alt='Image 1'
                  class='collage-right-side-item-above md:w-1/6 rounded-3xl object-cover'>
           </div>
-        </div>
+        </FadeInTransition>
       </div>
     </FadeInTransition>
 
@@ -56,13 +58,13 @@
 @media (min-width: 640px) {
   .collage-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
   }
 
   .collage-left-side {
     position: relative;
-    width: 47%;
+    width: 100%;
     display: flex;
     align-items: flex-start;
     justify-content: flex-end;
@@ -70,10 +72,12 @@
 
   .collage-right-side {
     position: relative;
-    width: 47%;
+    width: 100%;
+    margin-top: 3rem;
     display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-bottom: 250px;
   }
 
   .collage-left-side-item {
@@ -89,26 +93,15 @@
 
   .collage-right-side-item {
     width: 70%;
-    margin-top: 20%;
     margin-left: auto;
     flex: 0 auto;
   }
 
   .collage-right-side-item-above {
     position: absolute;
-    left: -10%;
-    top: auto;
-    right: auto;
-    bottom: -10%;
-    width: 70%;
-  }
-
-  .collage-right-side-inner {
-    position: relative;
-    width: 90%;
-    height: 35vw;
-    margin-top: 5%;
-    margin-bottom: 12%;
+    left: 0;
+    bottom: 0;
+    width: 45%;
   }
 }
 

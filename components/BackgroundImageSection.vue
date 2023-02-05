@@ -5,7 +5,7 @@
 </template>
 <style lang='css' scoped>
 .bg-image {
-  background-image: url("/placeholder.jpg");
+  background-image: url("/renderings/persp5.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 70vh;

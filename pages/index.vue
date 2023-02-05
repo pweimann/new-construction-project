@@ -12,15 +12,14 @@
         sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
         voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
     </div>
+    <MarqueeLabel class='mt-16' />
     <!-- TODO Teaser Renderings   -->
   </div>
   <ImageCarousel />
   <TabSection :tabs-nav-list='tabsNavList' title='Nutzung' />
   <ImageSlider />
-
   <ImageCollage></ImageCollage>
   <BackgroundImageSection />
-  <MarqueeLabel class='mt-10' />
   <TabSection :tabs-nav-list='saveOurPlanetList' title='Materialkreislauf' reverse invert />
 </template>
 <script lang='ts' setup>
