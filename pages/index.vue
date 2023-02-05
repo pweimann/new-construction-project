@@ -1,15 +1,26 @@
 <template>
   <section>
     <div class='hero-placeholder'>
-      <h1>Hello girls, scroll down</h1>
+      <h1>Hello stranger, scroll down</h1>
     </div>
   </section>
-  <ImageCollage></ImageCollage>
+  <div class='container mx-auto px-4'>
+    <div class='w-3/4 mx-auto text-center'>
+      <h2 class='text-dark-rosa text-2xl md:text-5xl font-bold uppercase leading-tight mb-4'>construction berlin
+        kreuzberg</h2>
+      <p class='text-dark-rosa text-1xl md:text-3xl leading-normal mb-4'>Lorem ipsum dolor sit amet, consetetur
+        sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+        voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+    </div>
+    <!-- TODO Teaser Renderings   -->
+  </div>
+  <ImageCarousel />
   <TabSection :tabs-nav-list='tabsNavList' title='Nutzung' />
+  <ImageSlider />
+
+  <ImageCollage></ImageCollage>
   <BackgroundImageSection />
   <MarqueeLabel class='mt-10' />
-  <ImageCarousel />
-  <ImageSlider />
   <TabSection :tabs-nav-list='saveOurPlanetList' title='Materialkreislauf' reverse invert />
 </template>
 <script lang='ts' setup>
