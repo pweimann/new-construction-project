@@ -128,6 +128,7 @@
 </template>
 
 <script setup lang='ts'>
+// TODO implement a reusable component
 </script>
 
 <style scoped>

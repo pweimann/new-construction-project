@@ -9,12 +9,14 @@
   <ImageCollage></ImageCollage>
   <BackgroundImageSection />
   <TabSection :tabs-nav-list='tabsNavList'/>
+  <ImageSlider/>
   <TabSection :tabs-nav-list='saveOurPlanetList' reverse/>
 </template>
 <script lang='ts' setup>
 import MarqueeLabel from '~/components/MarqueeLabel.vue'
 import { ref, Ref } from 'vue'
 import { TabNavItem } from '~/types/tab-nav-item'
+import ImageSlider from '~/components/ImageSlider.vue'
 
 const tabsNavList: Ref<TabNavItem[]> = ref([
   {
