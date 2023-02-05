@@ -15,17 +15,18 @@ import gsap from 'gsap'
 const labelHtml = ref('save our <strong>planet</strong> +++ One earth - one chance +++&nbsp;')
 
 onMounted(() => {
+  const duration = document.body.clientWidth > 640 ? 16 : 20
+
   gsap.set('.marquee-wrapper span', {
     translateX: '100%'
   })
 
   gsap.to('.marquee-wrapper span', {
-    duration: 12,
+    duration: duration,
     ease: "none",
     translateX: '-100%',
     modifiers: {
       translateX: gsap.utils.unitize(x => {
-        console.log(x)
         if(x === -100) {
           x = 100
         }
