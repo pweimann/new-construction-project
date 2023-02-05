@@ -3,7 +3,8 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/image-edge',
     '@nuxtjs/google-fonts',
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    'nuxt-icon'
   ],
   build: {
     transpile: ['gsap'],
