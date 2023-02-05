@@ -1,22 +1,26 @@
 <template>
-  <section class='bg-light-rosa py-20'>
+  <section class='py-20' :class='invert ? "bg-dark-rosa" : "bg-light-rosa"'>
     <FadeInTransition>
       <div class='container mx-auto px-4 text-center mb-12'>
-        <h2 class='text-dark-rosa text-2xl md:text-5xl font-bold uppercase leading-tight mb-4'>construction berlin
-          kreuzberg</h2>
+        <h2 v-if='title' class='text-2xl md:text-5xl font-bold uppercase leading-tight mb-4'
+            :class='invert ? "text-white" : "text-dark-rosa"'>{{title}}</h2>
       </div>
       <div class='tabs-wrapper full-width' :class='reverse ? "reverse" : ""'>
         <div class='tabs-nav full-width md:w-1/3'>
           <ul>
             <li v-for='navItem in tabsNavList' @click='clickTabNavItem(navItem)'
-                class='tabs-nav-item text-dark-rosa my-2'
-                :class='isActiveItem(navItem) ? "tab-nav-item--active" : "", reverse ? "mr-8 ml-4": "ml-8 mr-4"'>
+                class='tabs-nav-item my-2'
+                :class='invert ? "text-white" : "text-dark-rosa",
+                  isActiveItem(navItem) ? "tab-nav-item--active" : "",
+                  reverse ? "mr-8 ml-4": "ml-8 mr-4"'>
               <div class='text-2xl font-bold flex align-middle'>
                 <span v-show='isActiveItem(navItem)' class='inline-block mr-2'>-</span>
                 <span v-show='!isActiveItem(navItem)' class='inline-block mr-2'>+</span>
                 <div class='tabs-nav-item-title inline-block'>{{ navItem.title }}</div>
               </div>
-              <p class='text-dark-rosa text-1xl leading-normal mb-4' v-show='isActiveItem(navItem)'>
+              <p class='text-1xl leading-normal mb-4'
+                 v-show='isActiveItem(navItem)'
+                 :class='invert ? "text-white" : "text-dark-rosa"'>
                 {{ navItem.description }}</p>
             </li>
           </ul>
@@ -35,7 +39,9 @@ import { TabNavItem } from '~/types/tab-nav-item'
 
 const props = defineProps<{
   tabsNavList: TabNavItem[]
+  title?: string
   reverse?: boolean
+  invert?: boolean
 }>()
 const activeNavItem: Ref<TabNavItem | null> = ref(props.tabsNavList[0])
 

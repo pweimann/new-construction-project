@@ -5,12 +5,12 @@
     </div>
   </section>
   <ImageCollage></ImageCollage>
-  <TabSection :tabs-nav-list='tabsNavList'/>
-  <ImageCarousel/>
+  <TabSection :tabs-nav-list='tabsNavList' title='Nutzung'/>
   <BackgroundImageSection />
-  <MarqueeLabel/>
+  <MarqueeLabel class='mt-10'/>
+  <ImageCarousel/>
   <ImageSlider/>
-  <TabSection :tabs-nav-list='saveOurPlanetList' reverse/>
+  <TabSection :tabs-nav-list='saveOurPlanetList' title='Materialkreislauf' reverse invert/>
 </template>
 <script lang='ts' setup>
 import MarqueeLabel from '~/components/MarqueeLabel.vue'
