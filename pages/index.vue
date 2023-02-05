@@ -5,12 +5,12 @@
     </div>
   </section>
   <ImageCollage></ImageCollage>
-  <TabSection :tabs-nav-list='tabsNavList' title='Nutzung'/>
+  <TabSection :tabs-nav-list='tabsNavList' title='Nutzung' />
   <BackgroundImageSection />
-  <MarqueeLabel class='mt-10'/>
-  <ImageCarousel/>
-  <ImageSlider/>
-  <TabSection :tabs-nav-list='saveOurPlanetList' title='Materialkreislauf' reverse invert/>
+  <MarqueeLabel class='mt-10' />
+  <ImageCarousel />
+  <ImageSlider />
+  <TabSection :tabs-nav-list='saveOurPlanetList' title='Materialkreislauf' reverse invert />
 </template>
 <script lang='ts' setup>
 import MarqueeLabel from '~/components/MarqueeLabel.vue'
@@ -49,22 +49,22 @@ const tabsNavList: Ref<TabNavItem[]> = ref([
 const saveOurPlanetList: Ref<TabNavItem[]> = ref([
   {
     title: 'Save',
-    imageSrc: '/tabs/Reduce_neu.png',
-    description: 'Das Arbeiten von Morgen wird sowohl von dem Anstieg verschiedenster Technologien wie beispielsweise KI und Automatisierung als auch von Remote-Arbeit und flexiblen Arbeitszeitmodellen geprägt sein. Erhöhte Aufmerksamkeit gilt der Nachhaltigkeit sowie der sozialen Verantwortung von Unternehmen, um ein Beitrag zur Verbesserung der Arbeitsbedingungen für Mitarbeiter und Verringerung der Umweltbelastung zu erzielen.'
+    imageSrc: '/tabs/Recycle.png',
+    description: 'Wohnen: Da der Trend des Wohnens hin zu unterschiedlichsten Wohnkonzepten wie auch dem Anstieg der Remote-Arbeiten deutet, wurden durch flexible Wohnungsgrößen von 20m2 bis 120m2 in den Kategorien XS - S - M - L - XL sowie der Grundrissvariabilität innerhalb der jeweiligen Wohnungen selbst (Anpassung einer Raumstruktur an die Bedürfnisse der Bewohnenden) die Adaption des Wohnraums an den jeweiligen Nutzer und Lebensabschnitt sichergestellt.\n'
   },
   {
     title: 'Our',
-    imageSrc: '/tabs/ReUse_neu.png',
+    imageSrc: '/tabs/ReUse.png',
     description: 'Lorem'
   },
   {
     title: 'Planet',
-    imageSrc: '/tabs/Recycle_neu.png',
-    description: 'Wohnen: Da der Trend des Wohnens hin zu unterschiedlichsten Wohnkonzepten wie auch dem Anstieg der Remote-Arbeiten deutet, wurden durch flexible Wohnungsgrößen von 20m2 bis 120m2 in den Kategorien XS - S - M - L - XL sowie der Grundrissvariabilität innerhalb der jeweiligen Wohnungen selbst (Anpassung einer Raumstruktur an die Bedürfnisse der Bewohnenden) die Adaption des Wohnraums an den jeweiligen Nutzer und Lebensabschnitt sichergestellt.\n'
+    imageSrc: '/tabs/Reduce_neu.png',
+    description: 'Das Arbeiten von Morgen wird sowohl von dem Anstieg verschiedenster Technologien wie beispielsweise KI und Automatisierung als auch von Remote-Arbeit und flexiblen Arbeitszeitmodellen geprägt sein. Erhöhte Aufmerksamkeit gilt der Nachhaltigkeit sowie der sozialen Verantwortung von Unternehmen, um ein Beitrag zur Verbesserung der Arbeitsbedingungen für Mitarbeiter und Verringerung der Umweltbelastung zu erzielen.'
   }
 ])
 
-const imageCarousel: Ref<{src: string, alt?: string}[]> = ref([
+const imageCarousel: Ref<{ src: string, alt?: string }[]> = ref([
   {
     src: '/pikto/pikto_1.png',
     alt: ''
