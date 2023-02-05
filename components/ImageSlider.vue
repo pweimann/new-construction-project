@@ -1,6 +1,6 @@
 <template>
-  <section class='py-12 container mx-auto'>
-    <div id='imageSlider' class='carousel carousel-dark slide relative' data-bs-ride='carousel'>
+  <section class='py-20 container mx-auto'>
+    <div id='imageSlider' class='carousel carousel-dark slide relative' data-bs-ride='carousel' data-bs-interval="false">
       <div class='carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4'>
         <button
           type='button'

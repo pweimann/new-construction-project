@@ -1,5 +1,5 @@
 <template>
-  <section class='bg-light-rosa py-12'>
+  <section class='bg-light-rosa py-20'>
     <FadeInTransition>
       <div class='container mx-auto px-4 text-center mb-12'>
         <h2 class='text-dark-rosa text-2xl md:text-5xl font-bold uppercase leading-tight mb-4'>construction berlin

@@ -4,11 +4,11 @@
       <h1>Hello girls, scroll down</h1>
     </div>
   </section>
-  <MarqueeLabel/>
-  <ImageCarousel/>
   <ImageCollage></ImageCollage>
-  <BackgroundImageSection />
   <TabSection :tabs-nav-list='tabsNavList'/>
+  <ImageCarousel/>
+  <BackgroundImageSection />
+  <MarqueeLabel/>
   <ImageSlider/>
   <TabSection :tabs-nav-list='saveOurPlanetList' reverse/>
 </template>
