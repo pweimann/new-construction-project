@@ -35,22 +35,22 @@ const tabsNavList: Ref<TabNavItem[]> = ref([
   {
     title: 'Freizeit',
     imageSrc: '/tabs/Freizeit_Sport_neu.png',
-    description: 'Wohnen: Da der Trend des Wohnens hin zu unterschiedlichsten Wohnkonzepten wie auch dem Anstieg der Remote-Arbeiten deutet, wurden durch flexible Wohnungsgrößen von 20m2 bis 120m2 in den Kategorien XS - S - M - L - XL sowie der Grundrissvariabilität innerhalb der jeweiligen Wohnungen selbst (Anpassung einer Raumstruktur an die Bedürfnisse der Bewohnenden) die Adaption des Wohnraums an den jeweiligen Nutzer und Lebensabschnitt sichergestellt.\n'
+    description: 'Ein integrierter Freizeitbereich, der sich auf Sport, Fitness und Entspannung konzentriert, ist ebenfalls ein wichtiger Bestandteil des Gebäudes. Zugleich bietet das Gebäude auch Raum für Entspannung und Yoga. Außerdem gibt es kreative Freiräume, in denen Bewohner und Be- sucher ihre Kreativität und ihr handwerkliches Können ausleben können. Diese Räume können für eine Vielzahl von Aktivitäten genutzt werden, von Kunst- bis hin zu DIY-Projekten.'
   },
   {
     title: 'Arbeiten',
     imageSrc: '/tabs/Arbeiten_neu.png',
-    description: 'Das Arbeiten von Morgen wird sowohl von dem Anstieg verschiedenster Technologien wie beispielsweise KI und Automatisierung als auch von Remote-Arbeit und flexiblen Arbeitszeitmodellen geprägt sein. Erhöhte Aufmerksamkeit gilt der Nachhaltigkeit sowie der sozialen Verantwortung von Unternehmen, um ein Beitrag zur Verbesserung der Arbeitsbedingungen für Mitarbeiter und Verringerung der Umweltbelastung zu erzielen.'
+    description: 'Die Arbeitsflächen sind individuell anpassbar und können für eine Vielzahl von Geschäftsbedürfnissen genutzt werden, von Co-Working-Räumen bis hin zu kleinen Büros und Atelierflächen.'
   },
   {
     title: 'Wohnen',
     imageSrc: '/tabs/Wohnen_neu.png',
-    description: 'Lorem'
+    description: 'Jede Wohnung verfügt über eine offene und helle Grundfläche mit hohen Decken, um maximale Bewegungsfreiheit und Licht zu bieten. Zusätzlich bieten Balkone, Loggien und Auskragungen eine Erhöhung der Wohnqualität und ermöglichen eine nahtlose Verbindung vom Innen- und Außenraum.'
   },
   {
     title: 'Grüne Lunge',
     imageSrc: '/tabs/Grüne_Lunge_neu.png',
-    description: 'Lorem'
+    description: 'Das lichtdurchflutete Atrium fungiert als grüne Lunge des Gebäudes. Als Zentrum dient es der Begegnung zwischen Besucher und Bewohner und lässt die verschiedenen Nutzungen innerhalb des Gebäudes miteinander verschmelzen. Die Treppe im Erdgeschoss lädt zum verweilen, beobachten und als Treffpunkt ein.'
   },
   {
     title: 'Mobilität',

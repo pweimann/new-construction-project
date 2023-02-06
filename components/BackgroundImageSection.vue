@@ -9,7 +9,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  min-height: 30vh;
+  min-height: 32vh;
   width: 100%;
 }
 
