@@ -3,24 +3,32 @@
     <FadeInTransition>
       <div class='container mx-auto px-4'>
         <div class='w-3/4 mx-auto text-center'>
-          <h2 class='text-dark-rosa text-2xl md:text-5xl font-bold uppercase leading-tight mb-4'>VERTICAL ABODE</h2>
-          <p class='text-dark-rosa text-1xl md:text-3xl leading-normal mb-4'>Lorem ipsum dolor sit amet, consetetur
-            sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-            voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+          <h2 class='text-dark-rosa text-3xl md:text-5xl font-bold uppercase leading-tight mb-4'>VERTICAL ABODE</h2>
+          <p class='text-dark-rosa text-2xl md:text-3xl leading-normal mb-4'>ist zeitlos und warm</p>
+          <p class='text-dark-rosa text-sm md:text-1xl leading-normal mb-4'>Das vertical Village ist
+            modern und konzentriert sich auf den Nutzen des Raumes. Es schafft eine vertikale Gemeinschaft in einem
+            dichter besiedelten Bereich in Berlin Kreuzberg. Das zentrale Atrium kreiert eine offene,
+            lichtdurchflutete und grüne Insel als Zentrum der Gemeinschaft.</p>
         </div>
       </div>
       <div class='collage-container mt-8 md:mt-16 px-4 w-full'>
         <div class='collage-left-side'>
-          <img src='/renderings/Persp1.jpg' alt='Image 1'
+          <img src='/renderings/Persp1.jpg' alt='Rendering 1'
                class='collage-left-side-item rounded-3xl object-cover collage-left-side-first'>
-          <img src='/renderings/Persp2.jpg' alt='Image 1'
+          <img src='/renderings/Persp2.jpg' alt='Rendering 2'
                class='collage-left-side-item-above sm:w-1/6 rounded-3xl object-cover collage-left-side-second'>
         </div>
         <div class='collage-right-side'>
-          <img src='/renderings/Persp3.jpg' alt='Image 1'
+          <img src='/renderings/Persp3.jpg' alt='Rendering 3'
                class='collage-right-side-item rounded-3xl object-cover'>
-          <img src='/renderings/Persp4.jpg' alt='Image 1'
+          <img src='/renderings/Persp4.jpg' alt='Rendering 4'
                class='collage-right-side-item-above md:w-1/6 rounded-3xl object-cover'>
+        </div>
+        <div class='collage-left-side'>
+          <img src='/renderings/persp6.jpg' alt='Rendering 5'
+               class='collage-left-side-item rounded-3xl object-cover collage-left-side-first'>
+          <img src='/renderings/persp7.jpg' alt='Rendering 6'
+               class='collage-left-side-item-above sm:w-1/6 rounded-3xl object-cover collage-left-side-second'>
         </div>
       </div>
     </FadeInTransition>
