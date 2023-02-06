@@ -14,7 +14,7 @@
           </div>
           <div class='carousel-item float-left w-full'>
             <nuxt-img
-              src='/grundrisse/U2.neu.png'
+              src='/grundrisse/U1.neu.png'
               class='block w-full'
               alt=''
               preload
