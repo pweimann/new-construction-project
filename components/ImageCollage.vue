@@ -1,5 +1,5 @@
 <template>
-  <section class='bg-white py-20' ref='main'>
+  <section class='bg-white py-10 md:py-16' ref='main'>
     <FadeInTransition>
       <div class='container mx-auto px-4'>
         <div class='w-3/4 mx-auto text-center'>

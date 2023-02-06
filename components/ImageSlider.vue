@@ -1,5 +1,5 @@
 <template>
-  <section class='py-20 bg-dark-rosa'>
+  <section class='py-10 md:py-16 bg-dark-rosa'>
     <div class=' container mx-auto '>
       <div id='imageSlider' class='carousel slide relative' data-bs-ride='carousel'
            data-bs-interval='false'>

@@ -8,7 +8,7 @@
   background-image: url("/renderings/persp5.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center bottom;
   min-height: 32vh;
   width: 100%;
 }
