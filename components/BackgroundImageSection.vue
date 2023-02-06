@@ -8,7 +8,14 @@
   background-image: url("/renderings/persp5.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 70vh;
+  background-position: center;
+  min-height: 30vh;
   width: 100%;
+}
+
+@media (min-width: 640px) {
+  .bg-image {
+    min-height: 70vh;
+  }
 }
 </style>
