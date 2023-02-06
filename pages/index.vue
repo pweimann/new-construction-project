@@ -24,6 +24,9 @@
   <ImageCollage></ImageCollage>
   <BackgroundImageSection />
   <TabSection :tabs-nav-list='saveOurPlanetList' title='Materialkreislauf' reverse invert />
+  <section>
+    <nuxt-img src='/3D-Schnitt.jpg' class='w-full'/>
+  </section>
 </template>
 <script lang='ts' setup>
 import MarqueeLabel from '~/components/MarqueeLabel.vue'
