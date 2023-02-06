@@ -21,15 +21,15 @@
   <MarqueeLabel class='my-16' />
   <ImageCarousel />
   <TabSection :tabs-nav-list='tabsNavList' title='Nutzung' />
-  <ImageSlider />
-  <ImageCollage></ImageCollage>
-  <BackgroundImageSection />
-  <TabSection :tabs-nav-list='saveOurPlanetList' title='Materialkreislauf' reverse invert />
   <section>
     <FadeInTransition>
       <nuxt-img src='/3D-Schnitt.jpg' class='w-full' />
     </FadeInTransition>
   </section>
+  <ImageSlider />
+  <ImageCollage></ImageCollage>
+  <BackgroundImageSection />
+  <TabSection :tabs-nav-list='saveOurPlanetList' title='Materialkreislauf' reverse invert />
 </template>
 <script lang='ts' setup>
 import MarqueeLabel from '~/components/MarqueeLabel.vue'

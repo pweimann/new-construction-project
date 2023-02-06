@@ -11,7 +11,7 @@ export default <Partial<Config>>{
         'dark-rosa': '#693A44',
         'medium-rosa': '#A85D6D',
         'rosa': '#E88197',
-        'light-rosa': '#FFC2D1'
+        'light-rosa': '#a5888b'
       }
     }
   }
