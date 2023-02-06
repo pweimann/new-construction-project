@@ -1,54 +1,8 @@
 <template>
-  <section class='py-20 bg-dark-rosa'>
+  <section class='py-10 md:py-16 bg-dark-rosa'>
     <div class=' container mx-auto '>
       <div id='imageSlider' class='carousel slide relative' data-bs-ride='carousel'
            data-bs-interval='false'>
-        <div class='carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4'>
-          <button
-            type='button'
-            data-bs-target='#carouselExampleIndicators'
-            data-bs-slide-to='0'
-            class='active'
-            aria-current='true'
-            aria-label='Slide 1'
-          ></button>
-          <button
-            type='button'
-            data-bs-target='#carouselExampleIndicators'
-            data-bs-slide-to='1'
-            aria-label='Slide 2'
-          ></button>
-          <button
-            type='button'
-            data-bs-target='#carouselExampleIndicators'
-            data-bs-slide-to='2'
-            aria-label='Slide 3'
-          ></button>
-          <button
-            type='button'
-            data-bs-target='#carouselExampleIndicators'
-            data-bs-slide-to='3'
-            aria-label='Slide 4'
-          ></button>
-          <button
-            type='button'
-            data-bs-target='#carouselExampleIndicators'
-            data-bs-slide-to='4'
-            aria-label='Slide 5'
-          ></button>
-          <button
-            type='button'
-            data-bs-target='#carouselExampleIndicators'
-            data-bs-slide-to='5'
-            aria-label='Slide 6'
-          ></button>
-          <button
-            type='button'
-            data-bs-target='#carouselExampleIndicators'
-            data-bs-slide-to='6'
-            aria-label='Slide 7'
-          ></button>
-        </div>
         <div class='carousel-inner relative w-full overflow-hidden'>
           <div class='carousel-item active float-left w-full'>
             <nuxt-img

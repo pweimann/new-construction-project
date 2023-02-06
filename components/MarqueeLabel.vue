@@ -1,5 +1,5 @@
 <template>
-  <div class='marquee-wrapper container mx-auto' v-bind="$attrs">
+  <div class='marquee-wrapper' v-bind="$attrs">
     <span v-html='labelHtml'></span>
     <span v-html='labelHtml'></span>
     <span v-html='labelHtml'></span>

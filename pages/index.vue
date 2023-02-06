@@ -4,17 +4,20 @@
       <h1>Hello stranger, scroll down</h1>
     </div>
   </section>
-  <div class='container mx-auto px-4'>
-    <div class='w-3/4 mx-auto text-center'>
-      <h2 class='text-dark-rosa text-2xl md:text-5xl font-bold uppercase leading-tight mb-4'>construction berlin
-        kreuzberg</h2>
-      <p class='text-dark-rosa text-1xl md:text-3xl leading-normal mb-4'>Lorem ipsum dolor sit amet, consetetur
-        sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-        voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+  <FadeInTransition>
+    <div class='container mx-auto px-4'>
+      <div class='w-3/4  mx-auto text-center'>
+        <h2 class='text-dark-rosa text-2xl md:text-5xl font-bold uppercase leading-tight mb-6'>Vertical Abode</h2>
+        <p class='text-dark-rosa text-1xl md:text-3xl leading-normal mb-4'>Unsere Vision für das
+          Neubauprojekt in Berlin-Kreuzberg ist es, ein
+          innovatives und integriertes Lebenskonzept zu schaffen, das Wohnen, Arbeiten, Sport und kreative Freiräume
+          miteinander verbindet. Wir möchten eine inspiriernde und produktive Atmosphäre für die Besucher und Bewohner
+          bereitstellen, in welcher sie sich gerne aufhalten.</p>
+      </div>
+      <!-- TODO Teaser Renderings   -->
     </div>
-    <MarqueeLabel class='mt-16' />
-    <!-- TODO Teaser Renderings   -->
-  </div>
+  </FadeInTransition>
+  <MarqueeLabel class='my-16' />
   <ImageCarousel />
   <TabSection :tabs-nav-list='tabsNavList' title='Nutzung' />
   <ImageSlider />
@@ -32,27 +35,27 @@ const tabsNavList: Ref<TabNavItem[]> = ref([
   {
     title: 'Freizeit',
     imageSrc: '/tabs/Freizeit_Sport_neu.png',
-    description: 'Wohnen: Da der Trend des Wohnens hin zu unterschiedlichsten Wohnkonzepten wie auch dem Anstieg der Remote-Arbeiten deutet, wurden durch flexible Wohnungsgrößen von 20m2 bis 120m2 in den Kategorien XS - S - M - L - XL sowie der Grundrissvariabilität innerhalb der jeweiligen Wohnungen selbst (Anpassung einer Raumstruktur an die Bedürfnisse der Bewohnenden) die Adaption des Wohnraums an den jeweiligen Nutzer und Lebensabschnitt sichergestellt.\n'
+    description: 'Ein integrierter Freizeitbereich, der sich auf Sport, Fitness und Entspannung konzentriert, ist ebenfalls ein wichtiger Bestandteil des Gebäudes. Zugleich bietet das Gebäude auch Raum für Entspannung und Yoga. Außerdem gibt es kreative Freiräume, in denen Bewohner und Be- sucher ihre Kreativität und ihr handwerkliches Können ausleben können. Diese Räume können für eine Vielzahl von Aktivitäten genutzt werden, von Kunst- bis hin zu DIY-Projekten.'
   },
   {
     title: 'Arbeiten',
     imageSrc: '/tabs/Arbeiten_neu.png',
-    description: 'Das Arbeiten von Morgen wird sowohl von dem Anstieg verschiedenster Technologien wie beispielsweise KI und Automatisierung als auch von Remote-Arbeit und flexiblen Arbeitszeitmodellen geprägt sein. Erhöhte Aufmerksamkeit gilt der Nachhaltigkeit sowie der sozialen Verantwortung von Unternehmen, um ein Beitrag zur Verbesserung der Arbeitsbedingungen für Mitarbeiter und Verringerung der Umweltbelastung zu erzielen.'
+    description: 'Die Arbeitsflächen sind individuell anpassbar und können für eine Vielzahl von Geschäftsbedürfnissen genutzt werden, von Co-Working-Räumen bis hin zu kleinen Büros und Atelierflächen.'
   },
   {
     title: 'Wohnen',
     imageSrc: '/tabs/Wohnen_neu.png',
-    description: 'Lorem'
+    description: 'Jede Wohnung verfügt über eine offene und helle Grundfläche mit hohen Decken, um maximale Bewegungsfreiheit und Licht zu bieten. Zusätzlich bieten Balkone, Loggien und Auskragungen eine Erhöhung der Wohnqualität und ermöglichen eine nahtlose Verbindung vom Innen- und Außenraum.'
   },
   {
     title: 'Grüne Lunge',
     imageSrc: '/tabs/Grüne_Lunge_neu.png',
-    description: 'Lorem'
+    description: 'Das lichtdurchflutete Atrium fungiert als grüne Lunge des Gebäudes. Als Zentrum dient es der Begegnung zwischen Besucher und Bewohner und lässt die verschiedenen Nutzungen innerhalb des Gebäudes miteinander verschmelzen. Die Treppe im Erdgeschoss lädt zum verweilen, beobachten und als Treffpunkt ein.'
   },
   {
     title: 'Mobilität',
     imageSrc: '/tabs/Mobilität_neu.png',
-    description: 'Lorem'
+    description: 'Durch eine Tiefgarage mit abgetrennten Car-Sharing Plätzen und integrierten E-Ladesäulen wird ein großer Beitrag zur Mobilitätswende geleistet. Der im Erdgeschoss verortete, abschließbare Fahrradraum mit Umkleiden und Duschen unterstützt die Wahl des Verkehrsmittels hin zum Fahrrad oder E-Bike und ermöglicht sichere und trockene Parkflächen hierfür. '
   }
 ])
 
@@ -60,40 +63,17 @@ const saveOurPlanetList: Ref<TabNavItem[]> = ref([
   {
     title: 'Save',
     imageSrc: '/tabs/Recycle.png',
-    description: 'Wohnen: Da der Trend des Wohnens hin zu unterschiedlichsten Wohnkonzepten wie auch dem Anstieg der Remote-Arbeiten deutet, wurden durch flexible Wohnungsgrößen von 20m2 bis 120m2 in den Kategorien XS - S - M - L - XL sowie der Grundrissvariabilität innerhalb der jeweiligen Wohnungen selbst (Anpassung einer Raumstruktur an die Bedürfnisse der Bewohnenden) die Adaption des Wohnraums an den jeweiligen Nutzer und Lebensabschnitt sichergestellt.\n'
+    description: ''
   },
   {
     title: 'Our',
     imageSrc: '/tabs/ReUse.png',
-    description: 'Lorem'
+    description: ''
   },
   {
     title: 'Planet',
     imageSrc: '/tabs/Reduce_neu.png',
-    description: 'Das Arbeiten von Morgen wird sowohl von dem Anstieg verschiedenster Technologien wie beispielsweise KI und Automatisierung als auch von Remote-Arbeit und flexiblen Arbeitszeitmodellen geprägt sein. Erhöhte Aufmerksamkeit gilt der Nachhaltigkeit sowie der sozialen Verantwortung von Unternehmen, um ein Beitrag zur Verbesserung der Arbeitsbedingungen für Mitarbeiter und Verringerung der Umweltbelastung zu erzielen.'
-  }
-])
-
-const imageCarousel: Ref<{ src: string, alt?: string }[]> = ref([
-  {
-    src: '/pikto/pikto_1.png',
-    alt: ''
-  },
-  {
-    src: '/pikto/pikto_2.png',
-    alt: ''
-  },
-  {
-    src: '/pikto/pikto_3.png',
-    alt: ''
-  },
-  {
-    src: '/pikto/pikto_4.png',
-    alt: ''
-  },
-  {
-    src: '/pikto/pikto_5.png',
-    alt: ''
+    description: ''
   }
 ])
 </script>

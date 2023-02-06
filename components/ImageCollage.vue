@@ -1,32 +1,27 @@
 <template>
-  <section class='bg-white py-20' ref='main'>
+  <section class='bg-white py-10 md:py-16' ref='main'>
     <FadeInTransition>
       <div class='container mx-auto px-4'>
         <div class='w-3/4 mx-auto text-center'>
-          <h2 class='text-dark-rosa text-2xl md:text-5xl font-bold uppercase leading-tight mb-4'>construction berlin
-            kreuzberg</h2>
+          <h2 class='text-dark-rosa text-2xl md:text-5xl font-bold uppercase leading-tight mb-4'>VERTICAL ABODE</h2>
           <p class='text-dark-rosa text-1xl md:text-3xl leading-normal mb-4'>Lorem ipsum dolor sit amet, consetetur
             sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
             voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
         </div>
       </div>
       <div class='collage-container mt-8 md:mt-16 px-4 w-full'>
-        <FadeInTransition>
-          <div class='collage-left-side'>
-            <img src='/renderings/Persp1.jpg' alt='Image 1'
-                 class='collage-left-side-item rounded-3xl object-cover collage-left-side-first'>
-            <img src='/renderings/Persp2.jpg' alt='Image 1'
-                 class='collage-left-side-item-above sm:w-1/6 rounded-3xl object-cover collage-left-side-second'>
-          </div>
-        </FadeInTransition>
-        <FadeInTransition>
-          <div class='collage-right-side'>
-            <img src='/renderings/Persp3.jpg' alt='Image 1'
-                 class='collage-right-side-item rounded-3xl object-cover'>
-            <img src='/renderings/Persp4.jpg' alt='Image 1'
-                 class='collage-right-side-item-above md:w-1/6 rounded-3xl object-cover'>
-          </div>
-        </FadeInTransition>
+        <div class='collage-left-side'>
+          <img src='/renderings/Persp1.jpg' alt='Image 1'
+               class='collage-left-side-item rounded-3xl object-cover collage-left-side-first'>
+          <img src='/renderings/Persp2.jpg' alt='Image 1'
+               class='collage-left-side-item-above sm:w-1/6 rounded-3xl object-cover collage-left-side-second'>
+        </div>
+        <div class='collage-right-side'>
+          <img src='/renderings/Persp3.jpg' alt='Image 1'
+               class='collage-right-side-item rounded-3xl object-cover'>
+          <img src='/renderings/Persp4.jpg' alt='Image 1'
+               class='collage-right-side-item-above md:w-1/6 rounded-3xl object-cover'>
+        </div>
       </div>
     </FadeInTransition>
 
