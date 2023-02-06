@@ -5,7 +5,7 @@
 </template>
 <style lang='css' scoped>
 .bg-image {
-  background-image: url("/renderings/persp5.jpg");
+  background-image: url("/renderings/persp8.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;

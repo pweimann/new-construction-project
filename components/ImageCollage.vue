@@ -45,6 +45,10 @@
     flex-direction: column;
   }
 
+  .collage-left-side {
+    margin-top: 0.825rem;
+  }
+
   .collage-left-side-item-above {
     margin-top: 0.825rem;
   }
