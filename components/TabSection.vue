@@ -39,7 +39,7 @@
 </template>
 
 <script setup lang='ts'>
-import { ref, Ref, defineProps } from 'vue'
+import { ref, Ref, defineProps, computed } from 'vue'
 import { TabNavItem } from '~/types/tab-nav-item'
 
 const props = defineProps<{
@@ -59,7 +59,10 @@ const isActiveItem = (item: TabNavItem) => {
 }
 
 const checkVisibilitOfParagraph = (item: TabNavItem) => {
-  return document.body.clientWidth >= 640 && item === activeNavItem.value
+  if (process.client) {
+    return document.body.clientWidth >= 640 && item === activeNavItem.value
+  }
+  return item === activeNavItem.value
 }
 </script>
 <style lang='css' scoped>
