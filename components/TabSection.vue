@@ -1,7 +1,7 @@
 <template>
   <section class='py-10 md:py-16' :class='invert ? "bg-dark-rosa" : "bg-light-rosa"'>
     <FadeInTransition>
-      <div class='container mx-auto px-4 text-center mb-6'>
+      <div class='container mx-auto px-4 text-center mb-6 md:mb-12'>
         <h2 v-if='title' class='text-2xl md:text-5xl font-bold uppercase leading-tight'
             :class='invert ? "text-white" : "text-dark-rosa"'>{{title}}</h2>
       </div>
