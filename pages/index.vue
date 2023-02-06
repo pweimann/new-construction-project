@@ -6,7 +6,7 @@
   </section>
   <FadeInTransition>
     <div class='container mx-auto px-4'>
-      <div class='w-3/4  mx-auto text-center'>
+      <div class='w-3/4 mx-auto text-center'>
         <nuxt-img src='/logo.svg' />
         <!--        <h2 class='text-dark-rosa text-2xl md:text-5xl font-bold uppercase leading-tight mb-6'>Vertical Abode</h2>-->
         <p class='text-dark-rosa text-1xl md:text-3xl leading-normal mb-4'>Unsere Vision für das
@@ -18,7 +18,7 @@
       <!-- TODO Teaser Renderings   -->
     </div>
   </FadeInTransition>
-  <MarqueeLabel class='my-16' />
+  <MarqueeLabel class='my-16' :label='firstLabel' />
   <ImageCarousel />
   <TabSection :tabs-nav-list='tabsNavList' title='Nutzung' />
   <section>
@@ -28,6 +28,7 @@
   </section>
   <ImageSlider />
   <ImageCollage></ImageCollage>
+  <MarqueeLabel class='my-16' :label='secondLabel' />
   <BackgroundImageSection />
   <TabSection :tabs-nav-list='saveOurPlanetList' title='Materialkreislauf' reverse invert />
 </template>
@@ -82,6 +83,9 @@ const saveOurPlanetList: Ref<TabNavItem[]> = ref([
     description: ''
   }
 ])
+
+const firstLabel = 'save our <strong>planet</strong> +++ one earth - one chance +++&nbsp;\n'
+const secondLabel = 'reduce your <strong>footprint</strong> +++ increase your impact +++&nbsp;\n'
 </script>
 <style lang='css'>
 .hero-placeholder {
