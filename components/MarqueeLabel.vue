@@ -1,18 +1,23 @@
 <template>
-  <div class='marquee-wrapper' v-bind="$attrs">
-    <span v-html='labelHtml'></span>
-    <span v-html='labelHtml'></span>
-    <span v-html='labelHtml'></span>
-    <span v-html='labelHtml'></span>
-    <span v-html='labelHtml'></span>
+  <div class='marquee-wrapper' v-bind='$attrs'>
+    <span v-html='label'></span>
+    <span v-html='label'></span>
+    <span v-html='label'></span>
+    <span v-html='label'></span>
+    <span v-html='label'></span>
   </div>
 </template>
 
 <script setup lang='ts'>
-import { onMounted, ref } from 'vue'
+import { onMounted, ref, defineProps } from 'vue'
 import gsap from 'gsap'
 
-const labelHtml = ref('save our <strong>planet</strong> +++ One earth - one chance +++&nbsp;')
+const props = defineProps({
+  label: {
+    required: true,
+    type: String
+  }
+})
 
 onMounted(() => {
   const duration = document.body.clientWidth > 640 ? 16 : 20
@@ -23,11 +28,11 @@ onMounted(() => {
 
   gsap.to('.marquee-wrapper span', {
     duration: duration,
-    ease: "none",
+    ease: 'none',
     translateX: '-100%',
     modifiers: {
       translateX: gsap.utils.unitize(x => {
-        if(x === -100) {
+        if (x === -100) {
           x = 100
         }
         return x
