@@ -7,7 +7,8 @@
   <FadeInTransition>
     <div class='container mx-auto px-4'>
       <div class='w-3/4  mx-auto text-center'>
-        <h2 class='text-dark-rosa text-2xl md:text-5xl font-bold uppercase leading-tight mb-6'>Vertical Abode</h2>
+        <nuxt-img src='/logo.svg' />
+        <!--        <h2 class='text-dark-rosa text-2xl md:text-5xl font-bold uppercase leading-tight mb-6'>Vertical Abode</h2>-->
         <p class='text-dark-rosa text-1xl md:text-3xl leading-normal mb-4'>Unsere Vision für das
           Neubauprojekt in Berlin-Kreuzberg ist es, ein
           innovatives und integriertes Lebenskonzept zu schaffen, das Wohnen, Arbeiten, Sport und kreative Freiräume
@@ -25,7 +26,9 @@
   <BackgroundImageSection />
   <TabSection :tabs-nav-list='saveOurPlanetList' title='Materialkreislauf' reverse invert />
   <section>
-    <nuxt-img src='/3D-Schnitt.jpg' class='w-full'/>
+    <FadeInTransition>
+      <nuxt-img src='/3D-Schnitt.jpg' class='w-full' />
+    </FadeInTransition>
   </section>
 </template>
 <script lang='ts' setup>
