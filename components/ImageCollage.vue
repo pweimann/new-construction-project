@@ -10,22 +10,18 @@
         </div>
       </div>
       <div class='collage-container mt-8 md:mt-16 px-4 w-full'>
-        <FadeInTransition>
-          <div class='collage-left-side'>
-            <img src='/renderings/Persp1.jpg' alt='Image 1'
-                 class='collage-left-side-item rounded-3xl object-cover collage-left-side-first'>
-            <img src='/renderings/Persp2.jpg' alt='Image 1'
-                 class='collage-left-side-item-above sm:w-1/6 rounded-3xl object-cover collage-left-side-second'>
-          </div>
-        </FadeInTransition>
-        <FadeInTransition>
-          <div class='collage-right-side'>
-            <img src='/renderings/Persp3.jpg' alt='Image 1'
-                 class='collage-right-side-item rounded-3xl object-cover'>
-            <img src='/renderings/Persp4.jpg' alt='Image 1'
-                 class='collage-right-side-item-above md:w-1/6 rounded-3xl object-cover'>
-          </div>
-        </FadeInTransition>
+        <div class='collage-left-side'>
+          <img src='/renderings/Persp1.jpg' alt='Image 1'
+               class='collage-left-side-item rounded-3xl object-cover collage-left-side-first'>
+          <img src='/renderings/Persp2.jpg' alt='Image 1'
+               class='collage-left-side-item-above sm:w-1/6 rounded-3xl object-cover collage-left-side-second'>
+        </div>
+        <div class='collage-right-side'>
+          <img src='/renderings/Persp3.jpg' alt='Image 1'
+               class='collage-right-side-item rounded-3xl object-cover'>
+          <img src='/renderings/Persp4.jpg' alt='Image 1'
+               class='collage-right-side-item-above md:w-1/6 rounded-3xl object-cover'>
+        </div>
       </div>
     </FadeInTransition>
 

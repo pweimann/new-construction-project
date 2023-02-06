@@ -4,17 +4,19 @@
       <h1>Hello stranger, scroll down</h1>
     </div>
   </section>
-  <div class='container mx-auto px-4'>
-    <div class='w-3/4  mx-auto text-center'>
-      <h2 class='text-dark-rosa text-2xl md:text-5xl font-bold uppercase leading-tight mb-6'>Vertical Abode</h2>
-      <p class='text-dark-rosa text-1xl md:text-3xl leading-normal mb-4'>Unsere Vision für das
-        Neubauprojekt in Berlin-Kreuzberg ist es, ein
-        innovatives und integriertes Lebenskonzept zu schaffen, das Wohnen, Arbeiten, Sport und kreative Freiräume
-        miteinander verbindet. Wir möchten eine inspiriernde und produktive Atmosphäre für die Besucher und Bewohner
-        bereitstellen, in welcher sie sich gerne aufhalten.</p>
+  <FadeInTransition>
+    <div class='container mx-auto px-4'>
+      <div class='w-3/4  mx-auto text-center'>
+        <h2 class='text-dark-rosa text-2xl md:text-5xl font-bold uppercase leading-tight mb-6'>Vertical Abode</h2>
+        <p class='text-dark-rosa text-1xl md:text-3xl leading-normal mb-4'>Unsere Vision für das
+          Neubauprojekt in Berlin-Kreuzberg ist es, ein
+          innovatives und integriertes Lebenskonzept zu schaffen, das Wohnen, Arbeiten, Sport und kreative Freiräume
+          miteinander verbindet. Wir möchten eine inspiriernde und produktive Atmosphäre für die Besucher und Bewohner
+          bereitstellen, in welcher sie sich gerne aufhalten.</p>
+      </div>
+      <!-- TODO Teaser Renderings   -->
     </div>
-    <!-- TODO Teaser Renderings   -->
-  </div>
+  </FadeInTransition>
   <MarqueeLabel class='my-16' />
   <ImageCarousel />
   <TabSection :tabs-nav-list='tabsNavList' title='Nutzung' />
