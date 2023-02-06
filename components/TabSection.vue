@@ -2,7 +2,7 @@
   <section class='py-20' :class='invert ? "bg-dark-rosa" : "bg-light-rosa"'>
     <FadeInTransition>
       <div class='container mx-auto px-4 text-center mb-12'>
-        <h2 v-if='title' class='text-2xl md:text-5xl font-bold uppercase leading-tight mb-4'
+        <h2 v-if='title' class='text-2xl md:text-5xl font-bold uppercase leading-tight'
             :class='invert ? "text-white" : "text-dark-rosa"'>{{title}}</h2>
       </div>
       <div class='tabs-wrapper full-width' :class='reverse ? "reverse" : ""'>

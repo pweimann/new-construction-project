@@ -3,8 +3,7 @@
     <FadeInTransition>
       <div class='container mx-auto px-4'>
         <div class='w-3/4 mx-auto text-center'>
-          <h2 class='text-dark-rosa text-2xl md:text-5xl font-bold uppercase leading-tight mb-4'>construction berlin
-            kreuzberg</h2>
+          <h2 class='text-dark-rosa text-2xl md:text-5xl font-bold uppercase leading-tight mb-4'>VERTICAL ABODE</h2>
           <p class='text-dark-rosa text-1xl md:text-3xl leading-normal mb-4'>Lorem ipsum dolor sit amet, consetetur
             sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
             voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
