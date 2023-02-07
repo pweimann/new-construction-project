@@ -31,12 +31,16 @@
   <MarqueeLabel class='my-16' :label='secondLabel' />
   <BackgroundImageSection />
   <TabSection :tabs-nav-list='saveOurPlanetList' title='Materialkreislauf' reverse invert />
+  <footer class='w-full flex align-center justify-center text-white text-xs bg-dark-rosa sm:py-2'>
+    <NuxtLink to='/impressum'>Impressum</NuxtLink>
+  </footer>
 </template>
 <script lang='ts' setup>
 import MarqueeLabel from '~/components/MarqueeLabel.vue'
 import { ref, Ref } from 'vue'
 import { TabNavItem } from '~/types/tab-nav-item'
 import ImageSlider from '~/components/ImageSlider.vue'
+import Impressum from '~/pages/impressum.vue'
 
 const tabsNavList: Ref<TabNavItem[]> = ref([
   {
