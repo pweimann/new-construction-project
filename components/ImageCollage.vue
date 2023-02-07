@@ -22,7 +22,7 @@
           <img src='/renderings/Persp3.jpg' alt='Rendering 3'
                class='collage-right-side-item rounded-3xl object-cover'>
           <img src='/renderings/Persp4.jpg' alt='Rendering 4'
-               class='collage-right-side-item-above md:w-1/6 rounded-3xl object-cover'>
+               class='collage-right-side-item-above sm:w-1/6 rounded-3xl object-cover'>
         </div>
         <div class='collage-left-side'>
           <img src='/renderings/persp6.jpg' alt='Rendering 5'
@@ -84,7 +84,7 @@
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    padding-bottom: 250px;
+    padding-bottom: 20%;
   }
 
   .collage-left-side-item {
