@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class='hero-placeholder'>
+    <div class='hero-placeholder sm:text-1xl'>
       <h1>Hello stranger, scroll down</h1>
     </div>
   </section>
@@ -23,7 +23,7 @@
   <TabSection :tabs-nav-list='tabsNavList' title='Nutzung' />
   <section>
     <FadeInTransition>
-      <nuxt-img src='/3D-Schnitt.jpg' class='w-full' />
+      <nuxt-img src='/3D-Schnitt.jpg' class='w-full mt-10' />
     </FadeInTransition>
   </section>
   <ImageSlider />
