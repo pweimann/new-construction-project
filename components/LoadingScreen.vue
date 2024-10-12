@@ -1,14 +1,15 @@
 <template>
   <div class="fixed inset-0 bg-black flex items-center justify-center z-50 overflow-hidden">
-    <MazeBackground ref="mazeBackground" />
-    <div class="fog" />
+    <MazeBackground />
+<!--    <ParticleSystem />-->
+    <div class="fog"></div>
     <div v-if="!loadingComplete" class="text-white text-6xl font-bold perspective-text">
       {{ Math.floor(loadingProgress) }}%
     </div>
     <button
-      v-else
-      class="enter-button text-white text-2xl border-2 border-white px-6 py-3 rounded-lg hover:bg-white hover:text-black transition-all duration-300 ease-in-out transform bg-black"
-      @click="enterSpace"
+        v-else
+        @click="enterSpace"
+        class="enter-button text-white text-2xl border-2 border-white px-6 py-3 rounded-lg hover:bg-white hover:text-black transition-all duration-300 ease-in-out transform bg-black"
     >
       Enter The Space
     </button>
@@ -22,7 +23,6 @@ import MazeBackground from './MazeBackground.vue'
 
 const loadingProgress = ref(0)
 const loadingComplete = ref(false)
-const mazeBackground = ref(null)
 
 const enterSpace = () => {
   playSound('enter.mp3')
@@ -52,11 +52,7 @@ onMounted(() => {
           gsap.from('.enter-button', {
             opacity: 0,
             scale: 0.5,
-            duration: 0.5,
-            onComplete: () => {
-              // Start the maze animation after the button appears
-              mazeBackground.value.startAnimation()
-            }
+            duration: 0.5
           })
         }
       })
