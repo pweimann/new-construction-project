@@ -11,6 +11,6 @@
 </template>
 <style lang='css'>
 * {
-  font-family: Quicksand, SansSerif;
+  font-family: Copperplate, Roboto, SansSerif;
 }
 </style>
