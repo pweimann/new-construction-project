@@ -10,7 +10,7 @@
       class="enter-button text-white text-2xl border-2 border-white px-6 py-3 rounded-lg hover:bg-white hover:text-black transition-all duration-300 ease-in-out transform bg-black"
       @click="enterSpace"
     >
-      Enter
+      Enter The Space
     </button>
   </div>
 </template>
