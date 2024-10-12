@@ -6,7 +6,7 @@
         <!-- Header content goes here -->
       </header>
       <main>
-        <NuxtPage></NuxtPage>
+        <NuxtPage />
       </main>
       <footer>
         <!-- Footer content goes here -->
@@ -24,7 +24,7 @@ const entered = ref(false)
 
 <style lang='css'>
 * {
-  font-family: Copperplate, Roboto, SansSerif;
+  font-family:  Roboto, Copperplate, SansSerif;
 }
 
 body {
