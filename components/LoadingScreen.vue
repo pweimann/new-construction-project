@@ -1,12 +1,15 @@
 <template>
-  <div class="fixed inset-0 bg-black flex items-center justify-center z-50">
-    <div v-if="!loadingComplete" class="text-white text-6xl font-bold">
+  <div class="fixed inset-0 bg-black flex items-center justify-center z-50 overflow-hidden">
+    <MazeBackground />
+<!--    <ParticleSystem />-->
+    <div class="fog"></div>
+    <div v-if="!loadingComplete" class="text-white text-6xl font-bold perspective-text">
       {{ Math.floor(loadingProgress) }}%
     </div>
     <button
         v-else
-        @click="$emit('enter')"
-        class="enter-button text-white text-2xl bg-transparent border-2 border-white px-6 py-3 rounded-lg hover:bg-white hover:text-black transition-all duration-300 ease-in-out"
+        @click="enterSpace"
+        class="enter-button text-white text-2xl border-2 border-white px-6 py-3 rounded-lg hover:bg-white hover:text-black transition-all duration-300 ease-in-out transform bg-black"
     >
       Enter The Space
     </button>
@@ -16,11 +19,23 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 import gsap from 'gsap'
+import MazeBackground from './MazeBackground.vue'
 
 const loadingProgress = ref(0)
 const loadingComplete = ref(false)
 
+const enterSpace = () => {
+  playSound('enter.mp3')
+  emit('enter')
+}
+
+const playSound = (soundFile) => {
+  const audio = new Audio(soundFile)
+  audio.play()
+}
+
 onMounted(() => {
+  playSound('background.mp3')
   gsap.to(loadingProgress, {
     value: 100,
     duration: 2.5,
@@ -70,6 +85,27 @@ onMounted(() => {
   }
   50% {
     box-shadow: 0 0 25px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.4);
+  }
+}
+
+.fog {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('path-to-fog-image.png');
+  animation: fog-animation 60s linear infinite;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+@keyframes fog-animation {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 100%;
   }
 }
 </style>
