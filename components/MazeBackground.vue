@@ -1,53 +1,27 @@
 <template>
-  <canvas ref="canvas" class="fixed inset-0 z-0 w-full h-full" />
+  <canvas ref="canvas" class="fixed inset-0 z-0" />
 </template>
 
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
 
 const canvas = ref(null)
+const animationId = null
 let ctx
 let cols, rows
 const cellSize = 40
-let maze = []
+const maze = []
 let cellsToAnimate = []
 
 function setup () {
   ctx = canvas.value.getContext('2d')
+  canvas.value.width = window.innerWidth
+  canvas.value.height = window.innerHeight
 
-  // Set canvas size to match the viewport
-  function resizeCanvas () {
-    canvas.value.width = window.innerWidth
-    canvas.value.height = window.innerHeight
+  cols = Math.floor(canvas.value.width / cellSize)
+  rows = Math.floor(canvas.value.height / cellSize)
 
-    // Recalculate maze dimensions
-    cols = Math.ceil(canvas.value.width / cellSize)
-    rows = Math.ceil(canvas.value.height / cellSize)
-
-    // Regenerate the maze
-    generateFullMaze()
-  }
-
-  // Call resizeCanvas initially and add event listener for window resize
-  resizeCanvas()
-  window.addEventListener('resize', resizeCanvas)
-
-  // Start from the center
-  const startX = Math.floor(cols / 2)
-  const startY = Math.floor(rows / 2)
-  generateMaze(startX, startY)
-
-  // Prepare cells for animation
-  cellsToAnimate = maze.flat().filter(cell => cell.visited)
-  cellsToAnimate.sort((a, b) => {
-    const distA = Math.abs(a.x - startX) + Math.abs(a.y - startY)
-    const distB = Math.abs(b.x - startX) + Math.abs(b.y - startY)
-    return distA - distB
-  })
-}
-
-function generateFullMaze () {
-  maze = []
+  // Initialize the maze
   for (let y = 0; y < rows; y++) {
     maze[y] = []
     for (let x = 0; x < cols; x++) {
@@ -60,10 +34,12 @@ function generateFullMaze () {
     }
   }
 
+  // Start from the center
   const startX = Math.floor(cols / 2)
   const startY = Math.floor(rows / 2)
   generateMaze(startX, startY)
 
+  // Prepare cells for animation
   cellsToAnimate = maze.flat().filter(cell => cell.visited)
   cellsToAnimate.sort((a, b) => {
     const distA = Math.abs(a.x - startX) + Math.abs(a.y - startY)
@@ -91,14 +67,10 @@ function generateMaze (x, y) {
 
 function getNextCell (x, y, direction) {
   switch (direction) {
-    case 0:
-      return [x, y - 1] // Up
-    case 1:
-      return [x + 1, y] // Right
-    case 2:
-      return [x, y + 1] // Down
-    case 3:
-      return [x - 1, y] // Left
+    case 0: return [x, y - 1] // Up
+    case 1: return [x + 1, y] // Right
+    case 2: return [x, y + 1] // Down
+    case 3: return [x - 1, y] // Left
   }
 }
 
@@ -160,7 +132,9 @@ onMounted(() => {
 })
 
 onUnmounted(() => {
-  window.removeEventListener('resize', resizeCanvas)
+  if (animationId) {
+    cancelAnimationFrame(animationId)
+  }
 })
 
 // Expose a method to start the animation
